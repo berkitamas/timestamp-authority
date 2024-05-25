@@ -39,11 +39,11 @@ import (
 	"google.golang.org/protobuf/types/known/durationpb"
 
 	// Register the provider-specific plugins
+	_ "github.com/berkitamas/sigstore/pkg/signature/kms/hashivault"
 	"github.com/sigstore/sigstore/pkg/signature/kms"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/aws"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/azure"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/gcp"
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/hashivault"
 )
 
 /*

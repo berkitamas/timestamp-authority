@@ -26,10 +26,10 @@ import (
 	"github.com/sigstore/sigstore/pkg/signature/kms"
 
 	// Register the provider-specific plugins
+	_ "github.com/berkitamas/sigstore/pkg/signature/kms/hashivault"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/aws"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/azure"
 	_ "github.com/sigstore/sigstore/pkg/signature/kms/gcp"
-	_ "github.com/sigstore/sigstore/pkg/signature/kms/hashivault"
 )
 
 const KMSScheme = "kms"

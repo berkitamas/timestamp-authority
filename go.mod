@@ -5,6 +5,7 @@ go 1.22
 require (
 	cloud.google.com/go/security v1.17.0
 	github.com/beevik/ntp v1.4.2
+	github.com/berkitamas/sigstore/pkg/signature/kms/hashivault v0.0.0-20240525234353-70bba1d378b8
 	github.com/digitorus/pkcs7 v0.0.0-20230818184609-3a137a874352
 	github.com/digitorus/timestamp v0.0.0-20231217203849-220c5c2851b7
 	github.com/go-chi/chi v4.1.2+incompatible
@@ -27,7 +28,6 @@ require (
 	github.com/sigstore/sigstore/pkg/signature/kms/aws v1.8.3
 	github.com/sigstore/sigstore/pkg/signature/kms/azure v1.8.3
 	github.com/sigstore/sigstore/pkg/signature/kms/gcp v1.8.3
-	github.com/sigstore/sigstore/pkg/signature/kms/hashivault v1.8.3
 	github.com/spf13/cobra v1.8.0
 	github.com/spf13/pflag v1.0.5
 	github.com/spf13/viper v1.18.2
@@ -157,5 +157,3 @@ require (
 	gopkg.in/go-jose/go-jose.v2 v2.6.3 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 )
-
-replace github.com/sigstore/sigstore/pkg/signature/kms/hashivault v1.8.3 => github.com/berkitamas/sigstore/pkg/signature/kms/hashivault v0.0.0-20240525231045-0901ead2577e
